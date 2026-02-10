@@ -252,7 +252,12 @@ In :- If the first operand is present in second operand(sequence), it is evaluat
 NOT IN :- If the first operand(value and variable) is not present in the second operand(sequence) it is evaluated to be true sequence can either be a list, tuple or dictionary.
 
 
-**IDENTITY OPERATORS**
+
+**IDENTITY OPERATORS** Python offers two identity operators that are used to check if two values are located in the same part of memory:
+
+a. Is: If the references on the both side point to the same object then, it is determined to be true.
+
+b. Is Not: If the references on both side do not point at the same object then, it is determined to true.
 
 
 
@@ -260,8 +265,111 @@ NOT IN :- If the first operand(value and variable) is not present in the second 
 
 
 
+##### STRING
+
+A string in python is a sequence of characters enclosed.
+
+for example: "Hello world" is a string consisting of a sequence of characters such as 'Hello World' anything including letters, numbers,
+
+symbols and even wide spaces withing the quotation marks is treated as a string in python.
+
+Python doesn't have a character data type, therefore a single character is considered as a string of length 1.
 
 
+
+###### CHARACTERSTICS OF STRING:
+
+
+
+1\. IMMUTABLE: Cannot be changed.
+
+2\. ORDERED: Characters have fixed positions.
+
+3\. ITERATABLE: Can loop through characters.
+
+4\. SUPPORTS SLICING: Can extract substrings.
+
+5\. HOLDS ANY CHARACTERS: Letters, numbers, symbols, spaces.
+
+6\. UNICODE SUPPORT: Handles all languages and emojis.
+
+7\. DYNAMIC LENGTH: Any size from zero to huge.
+
+
+
+1\. IMMUTABLE: Once a string is created, it cannot be changed. Any operation that modifies a string
+
+&nbsp;  will create a new string instead of altering the original one.
+
+2\. ORDERED: Strings are ordered collection of characters where each character has a fixed index(starting from zero)
+   we can access the characters using there position.
+
+3\. ITERATABLE: we can iterate each characters of a string  using python loops
+
+
+
+###### 14. Experiment
+
+Creating a String 
+We can create a String using a single quotation marks('') or double quotation marks("")
+
+Multiline string:
+In case, we want a string to represent multiple lines then, we can make use of triple quotations(''' ''')or(""" """)
+to create a multiline string.
+
+Accessing characters in a String
+In Python, Strings are sequences of characters that can be exceed individually with the help of indexing
+Strings are indexed 0 from the start and -1 from the end.
+This indexing helps us retrieve particular characters from the string.
+
+Accessing string with negative indexing:
+In python, we are allowed to use negative addresses references in order to access the characters from the back of the string.
+For example: -1 refers to the last character, -2 refers to second last character and so on
+
+## 17. Experiment
+##### String Slicing
+Slicing is a way in python that allow us to extract a portion of a string by specifing the start and end indexes. The format for 
+slicing the string is 
+"String_name[start:end]"
+where the start is the index where the slicing began and end is the index where it ends 
+
+##### String Immutability
+String in python is an immutable datatype that can not be changed after it's creation however we can manipulate strings using 
+various methods like Slicing, Concatination or Formatting in order to create new strings on the basis of the original one.
+
+#19. WAP to delete a string
+msg = "Python"
+del msg
+print (msg)
+
+##### UPDATING A STRING:
+String is an immutable datatype which cannot be modified however we can update a part of a string by creating a new string itself.
+
+#20.WAP to updating a string in python
+given_str = "Welcome learners!"
+print("given String", given_str)
+
+new_str1 ="W" + given_str[1:]
+new_str2 = given_str.replace("learners", "to Students")
+print("New String 1: ", new_str1)
+print("New String 2: ", new_str2)
+
+### Common String Method
+Python offers many built in methods for string manipulations. These methods allow us to determine the lenght of a string,
+change it's cases, validate it, split and join, search and find substring and many other.
+
+i. len() function: It is used to determine the lenght od the string. This function returns the total no. of characters in a given
+string.
+
+ii. upper() and lower(): In Python, the upper() method is used to convert all the characters of the string to uppercase whereas, 
+   the lower method allows us to convert all the characters of the string to lowercase.
+
+#22. WAP to display the upper() and lower() method use in python
+
+iii. Strip and Replace method: Strip allows us to remove thr leading and trailing wide spaces from the string whereas, Replace is 
+used to replace all the ouccurences of a particular substring with another.
+
+#WAP to demonstrate the removing of spaces and replace subtring using string in pyhton.
 
 
 
